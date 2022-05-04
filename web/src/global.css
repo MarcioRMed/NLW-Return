@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 
+body{
+    @apply bg-[#89898A] text-zinc-100;
+}
+
+
+
+
+
 
 
 /* usando com classe */
