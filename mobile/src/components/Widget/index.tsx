@@ -5,9 +5,13 @@ import BottomSheet from '@gorhom/bottom-sheet'
 import { gestureHandlerRootHOC } from 'react-native-gesture-handler'
 
 import { Options } from '../Options';
+import {Form} from '../Form'
 
 import {theme} from '../../theme'
 import { styles } from './styles';
+import { feedbackTypes } from '../../utils/feedbackTypes'
+
+export type FeedbackType = keyof typeof feedbackTypes;
 
 function Widget() {
 
@@ -23,11 +27,11 @@ function Widget() {
             style ={styles.button}
             onPress={handleOpen}
         >
-            <ChatTeardropDots 
-            size={24}
-            weight='bold'
-            color={theme.colors.text_on_brand_color}
-            />
+             <ChatTeardropDots 
+             size={24}
+             weight='bold'
+             color={theme.colors.text_on_brand_color}
+             />
         </TouchableOpacity>
 
         <BottomSheet 
@@ -37,11 +41,12 @@ function Widget() {
           handleIndicatorStyle={styles.indicator}
         >
 
-        <Options/>
+        <Form
+          feedbackType = 'BUG'
+        />
+          
         </BottomSheet>
-        
-
-
+    
     </>
   );
 }
