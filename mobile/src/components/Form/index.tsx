@@ -66,7 +66,6 @@ export function Form({ feedbackType }: Props) {
             isLoading={false}
             />
         </View>
-
     </View>
   );
 }
