@@ -1,5 +1,10 @@
 # NLW 8 - RETURN -  TRILHA IMPULSE - 2022
 
+
+link da aplicação rodando
+https://nlw8-return-impulse-phi.vercel.app/
+
+
 ## TECNOLOGIAS
 REACT - REACT NATIVE - NODE
 
@@ -42,6 +47,14 @@ TS + JSX (Javascript + XML)
     5. Algo esta além da nossa regra de negócio / serviço de terceiros
 
 
+
+Dicas extra
+1. Tema light/dark
+2. Em produção usar algum serviço de email
+3. Melhorar o HTML/CSS do email
+4. Dashboard de feedbacks
+   a. Autenticação(Firebase/OAuth)
+5. Validação de campos/ erros
 
 
 
