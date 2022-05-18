@@ -38,7 +38,6 @@ export function FeedbackContentStep({
             type: feedbackType,
             comment,
             screenshot,
-
         })
 
         setIsSendingFeedback(false)
